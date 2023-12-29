@@ -1,5 +1,7 @@
 import React, { Children } from 'react'
 import "@styles/globals.css"
+import Nav from "../components/nav"
+import Provider from "../components/provider"
 
 export const metadata ={
     title : "promptAI",
@@ -16,6 +18,7 @@ const RootLayout = ({Children}) => {
             <div className='gradient'/>
         </div>
         <main className='app'>
+          <Nav />
             {Children}
         </main>
        </body>
